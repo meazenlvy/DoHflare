@@ -12,12 +12,12 @@
   // Uncomment specific variables only to override the default execution behavior.
   "vars": {
     // Upstream Resolution & Routing Configuration
-    // "UPSTREAM_URLS": "https://dns11.quad9.net/dns-query,https://security.cloudflare-dns.com/dns-query",  // List of DNS resolvers for upstream resolution
-    // "DOH_PATH": "/dns-query",  // Path for the DNS over HTTPS endpoint
+    "UPSTREAM_URLS": "https://dns11.quad9.net/dns-query,https://doh.opendns.com/dns-query",  // List of DNS resolvers for upstream resolution
+    "DOH_PATH": "/query",  // Path for the DNS over HTTPS endpoint
     // "DOH_CONTENT_TYPE": "application/dns-message",  // Content type for DNS over HTTPS queries
     
     // Landing Page Display Settings
-    // "ROOT_CONTENT": "<!doctype html><html><body>Custom Landing Page</body></html>",  // Optional custom landing page HTML content
+    "ROOT_CONTENT": "<!DOCTYPE html><html><head><title>Welcome to nginx!</title><style>html { color-scheme: light dark; } body { width: 35em; margin: 0 auto; font-family: Tahoma, Verdana, Arial, sans-serif; }</style></head><body><h1>Welcome to nginx!</h1><p>If you see this page, the nginx web server is successfully installed and working. Further configuration is required.</p><p>For online documentation and support please refer to <a href="http://nginx.org/">nginx.org</a>.<br/>Commercial support is available at <a href="http://nginx.com/">nginx.com</a>.</p><p><em>Thank you for using nginx.</em></p></body></html>",  // Optional custom landing page HTML content
     // "ROOT_CONTENT_TYPE": "text/html; charset=utf-8",  // Content type for the landing page
     // "ROOT_CACHE_TTL": "86400",  // Cache time-to-live (TTL) for the root page in seconds
 
